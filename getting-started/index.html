@@ -45,6 +45,16 @@ top-level: gettingstarted
         {% endif %}
       {% endfor %}
     </ul>
+    {% elsif page.title == 'API'  %}
+    <ul class="page--list">
+        <li><a class="page--title" href="{{ '/gettingstarted/' | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% assign gapi = site.api | sort:"weight" %}
+        {% for item in gapi %}
+        {% if item.title %}
+        <li><a class="page--link" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
     {% endif %}
   {% endfor %}
 </div>
