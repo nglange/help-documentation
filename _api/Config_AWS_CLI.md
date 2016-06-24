@@ -3,13 +3,12 @@ layout: page
 title:  "Configuring the AWS CLI"
 featured: true
 weight: 3
-tags: [api, configure, AWS, CLI]
+tags: [getting started, api, configure, AWS, CLI]
 author: Mao Jia
 dateAdded: June 8th, 2016
 ---
 
-
-# Configuring the AWS CLI## Configuring Authentication
+## Configuring Authentication
 The IBM COS API supports AWS Signature v2 and v4 Authentication.
 The AWS Signature v4 signing specification describes how to add authentication information to S3 requests.Requests using AWS authentication must be signed using the requesting user’s the Access Key ID and Secret Access Key, collectively known as Access Credentials.
 The AWS Credentials file and AWS CLI Configuration file can contain one or more named set of Access Credentials, called named profiles. These files always have one set of Access Credentials which are identified as the ``[default]`` profile.

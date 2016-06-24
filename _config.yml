@@ -47,7 +47,7 @@ collections:
     permalink: /troubleshooting/:path/
   api:
     output: true
-    permalink: /openstack/api/:path/
+    permalink: /gettingstarted/api/:path/
   userdocs:
     output: true
     permalink: /openstack/userdocs/:path/

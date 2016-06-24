@@ -3,12 +3,12 @@ layout: page
 title:  "IBM Cloud Object Storage API Examples"
 featured: true
 weight: 5
-tags: [api, example]
+tags: [getting started, api, example]
 author: Mao Jia
 dateAdded: June 8th, 2016
 ---
 
-# IBM Cloud Object Storage API Examples
+
 
 **Note:** These examples are used to assist you in programming your own solutions and not be copied and pasted directly into your applications. ## Create a Bucket
 Create a Bucket with the Make Bucket (mb) operation. 
