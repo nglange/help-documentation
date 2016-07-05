@@ -12,7 +12,7 @@ dateAdded: June 22, 2016
 
 The IBM Cloud Object Storage(COS) supports two types of user accounts: Administrator and User.
 
-The Administrator is the primary contact of your organization. Upon setup of your COS environment, the Administrator account is created. If you are a secondary contact and do not have access to your COS environment, you can ask the Administrator to [create a user account]() for you. 
+The Administrator is the primary contact of your organization. Upon setup of your COS environment, the Administrator account is created. If you are a secondary contact and do not have access to your COS environment, you can ask the Administrator to [create a user account](../Box_Panel/index.html#create-user) for you. 
 
 For both Administrator and User, once your account is created, you will receive an email from Blue Box, which contains the following information:
 
@@ -39,7 +39,11 @@ The Administrator and Users are granted different access rights in Box Panel. Th
 
 
 ## Obtain Access Credentials
+{: #AccessCredentials} 
 
-Lock Box
 
-also add a section about admin create new user in BP guide
+After you log in Box Panel, you can obtain your Access Credentials from the Lock Box. The credentials are required when you access the COS service by using the API or CLI.
+
+1. From the Dashboard page, click the **Account** navigation menu on the top of the page.
+2. Then click **Lock Box** from the drop-down list.
+3. Click the **Subject** of your Lock Box message to open the obtian your  Access Credentials.

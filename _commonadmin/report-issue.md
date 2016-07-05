@@ -22,10 +22,12 @@ Your **IBM COS Support** team is available 24 hours a day, seven days a week.  I
   * Any additional useful information
 
 
-**2. Open a new ticket with IBM COS Support** by using one of the following methods:**
-   * email: 
-   * chat: 
-   * web: 
-   * phone: 
+**2. Open a new ticket with IBM COS Support** by using one of the following methods:
+
+* email: support@bluebox.net
+* chat: chat.bluebox.net
+* web: support.bluebox.net 
+* phone: 800-613-4305
+
 
 If you feel that your situation requires escalation, as in the case of outage, follow the steps in [How do I escalate a ticket?](../escalating-a-ticket/index.html) to escalate your ticket.

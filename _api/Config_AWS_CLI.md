@@ -12,7 +12,7 @@ dateAdded: June 8th, 2016
 The IBM COS API supports AWS Signature v2 and v4 Authentication.
 The AWS Signature v4 signing specification describes how to add authentication information to S3 requests.Requests using AWS authentication must be signed using the requesting user’s the Access Key ID and Secret Access Key, collectively known as Access Credentials.
 The AWS Credentials file and AWS CLI Configuration file can contain one or more named set of Access Credentials, called named profiles. These files always have one set of Access Credentials which are identified as the ``[default]`` profile.
-For information on how to obtian the Access Credentials, see **placeholder for link to the obtian key section** The order of precedence using for Access Credentials is as follows:
+For information on how to obtian the Access Credentials, see [Obtian the Access Credentials](../../userguides/user_accounts/index.html#AccessCredentials).The order of precedence using for Access Credentials is as follows:
 * Passing Credentials as Command Line Options
 * Setting Credentials in Environment Variables* Setting Credentials in the Shared Credentials File
 ### Passing Credentials as Command Line Options
@@ -30,7 +30,7 @@ dateAdded: June 8th, 2016
 
 *Table 2. AWS CLI Supported Variables*
 
-* The AWS CLI reads the Named Profiles settings in the default ``~/.aws/config`` file.• Credentials are read from and written to the default credentials file (``~/.aws/credentials``).### Setting Credentials in the Shared Credentials File
+* The AWS CLI reads the Named Profiles settings in the default ``~/.aws/config`` file.* Credentials are read from and written to the default credentials file (``~/.aws/credentials``).### Setting Credentials in the Shared Credentials File
 #### Creating Credentials
 Use ```aws configure``` command to create an Access Credentials file with the ```default``` profile.
 
@@ -45,11 +45,11 @@ To support multiple identities, AWS Credential Files can have Named Profiles.U
 aws configure --profile pool2AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY Default region name [None]: Default output format [None]: json 
 ```* The Access Key will be stored in ``~/.aws/credentials``.* The Secret Key will be stored in ``~/.aws/credentials``.* The Region does not need to be set. The user can press the Return key to skip this. The Region will be stored in ``~/.aws/config``.* The Output Format will be stored in ``~/.aws/config``.An example of the AWS Credentials File (``~/.aws/credentials``) is as follows:
 ```
-[default]aws_access_key_id = AKIAIOSFODNN7EXAMPLEaws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY[profile pool2] 1aws_access_key_id = N67W90RKLCWOLPSKN8W8aws_secret_access_key = RlfTDyqPg0WnY/PWdxMEe/gjuG7QRckynofRMwwR
+[default]aws_access_key_id = AKIAIOSFODNN7EXAMPLEaws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY[profile pool2]aws_access_key_id = N67W90RKLCWOLPSKN8W8aws_secret_access_key = RlfTDyqPg0WnY/PWdxMEe/gjuG7QRckynofRMwwR
 ```* The pool2 profile offers another set of Access Credentials for an S3 connection.  An example of the AWS Configuration File (~/.aws/config) is as follows:
 ```
 [default]output=json[profile pool2]output=text```
-#### Using Default CredentialsThis section uses the command for listing Buckets as and example. You can use other AWS commands similarly. 
+#### Using Default CredentialsThis section uses the command for listing Buckets as an example. You can use other AWS commands similarly. 
  To list buckets by using the default Credentials, use the following command:
 ```$ aws s3 ls   
 ```To list buckets by using the a profile named ``pool2``, use the following command:

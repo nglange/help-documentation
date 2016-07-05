@@ -10,6 +10,11 @@ dateAdded: January 14th, 2016
 
 First, be sure you've opened a ticket with **IBM COS Support**, as described in [How do I report an issue?](../report-issue/index.html)
 
+* email: support@bluebox.net
+* chat: chat.bluebox.net
+* web: support.bluebox.net 
+* phone: 800-613-4305
+
 If you have a new or existing ticket, and you feel that your situation requires escalation, as in the case of _outage_, you can escalate in three ways:
 
 * To escalate a ticket online, scroll to the bottom of your ticket and select the checkbox beside **Urgent**. Note that Urgent status should apply only to situations in which actual outages are occurring.

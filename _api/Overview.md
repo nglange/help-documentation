@@ -1,9 +1,9 @@
 ---
 layout: page
-title:  "IBM Cloud Object Storage API Overview"
+title:  "IBM Cloud Object Storage AWS CLI Overview"
 featured: true
 weight: 1
-tags: [getting started, api, overview]
+tags: [getting started, aws, cli, overview]
 author: Mao Jia
 dateAdded: June 8th, 2016
 ---
