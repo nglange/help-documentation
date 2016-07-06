@@ -27,7 +27,7 @@ layout: default
           {% endfor %}
         {% elsif x == 'gettingstarted'%}
           {% assign counter = 0 %}
-          {% assign counter = site.commontech.size | plus:site.commonadmin.size | plus:site.userguides.size %}
+          {% assign counter = site.commontech.size | plus:site.commonadmin.size | plus:site.userguides.size | plus:site.api.size%}
         {% else %}
           {% assign counter = 0 %}
           {% for item in site[x] %}
