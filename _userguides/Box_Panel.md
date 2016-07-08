@@ -4,16 +4,15 @@ title: "Box Panel User Guide"
 featured: true 
 weight: 2 
 tags: [getting started, Box Panel] 
-author: Jill Tempelmeyer and Leslie Lundquist
-editor: Leslie Lundquist
+author: Mao Jia
 dateAdded: April 14, 2016 
 ---
 
 ## Getting Started with Box Panel
 
-The Box Panel interface gives you a single, consolidated view of assets deployed in your **IBM Blue Box Dedicated** and **IBM Blue Box Local** cloud environments. Its self-service access lets you create support tickets, leverage central authentication for logins and user permissions, monitor various functions, and view your invoices, easily. 
+The Box Panel interface gives you a single, consolidated view of your IBM Cloud Object Storage (COS) environment. Its self-service access enables you to  create support tickets, leverage central authentication for logins and user permissions, monitor various functions, and view your invoices, easily. 
 
-This user guide gives you an end-to-end overview, so you can get started using Box Panel to monitor and control your IBM Blue Box Cloud. This document applies to Box Panel Version 3.8.3 and later.
+This user guide gives you an end-to-end overview, so you can get started using Box Panel to monitor and control your IBM COS environment. 
 
 ### Table of Contents
 
@@ -39,7 +38,7 @@ To get started with Box Panel, log in.
 ### Navigating the Box Panel Dashboard
 {: #navigating-the-box-panel-dashboard}
 
-On the Box Panel Dashboard, all users will see a Support Ticket section. In addition, the Administartor and Users with technical role will also see a consolidated asset view of all the hosts of your IBM COS service in a Infrastructure section. 
+On the Box Panel Dashboard, all users will see a Support Ticket section. In addition, the Administartor and Users with technical roles will also see a consolidated asset view of all the hosts of your IBM COS service in an Infrastructure section. 
 
 
 On the right, additional details related to your account summary are displayed, including your **Lock Box Messages**, **Verbal Password**, **Bandwidth Quota**, and **Backup Quota**. 
@@ -129,4 +128,4 @@ For further billing support, please contact the Support Team and we will be happ
 
 **Note:** Only Administrator can create new Users. 
 
-To create a User, [submit a ticket](#create-ticket) to request Support staff to add new Users.  
+To create a User, [submit a ticket](#create-ticket) to request Support staff to add a new User.  
