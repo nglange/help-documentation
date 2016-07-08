@@ -56,7 +56,7 @@ Click **Docs** from the navigation bar and select **IBM COS** to view the help d
 ### Getting Support 
 {: #getting-support}
 
-**Note: For immediate support, you can call Blue Box Support at 1-800-613-4305 or email us at support@bluebox.net.**
+**Note: For immediate support, you can call COS Support at 1-800-613-4305 or email us at support@bluebox.net.**
 
 In most cases, you'll want to open a support ticket to get support. By using a ticket, you'll have a record of the issue and the solutions taken to address your issue, complete with logs of your chat sessions with the customer support team.
 
