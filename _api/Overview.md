@@ -11,7 +11,7 @@ dateAdded: June 8th, 2016
 
 
 ## Intended Purpose and Audience
-The IBM Cloud Object Storage(COS) Application Programming Interface (API) enables application developers to use existing Amazon Simple Storage Service (S3) applications to access object buckets. When an object bucket is deployed, it is automatically made available through the Amazon S3 API.The IBM COS supports the most commonly used subset of Amazon S3 API operations. This document introduces the steps to use the Amazon Web Service (AWS) Command Line Interface (CLI) to manage your IBM COS service as a command line tool. 
+The IBM Cloud Object Storage (COS) Application Programming Interface (API) enables application developers to use existing Amazon Simple Storage Service (S3) applications to access object buckets. When an object bucket is deployed, it is automatically made available through the Amazon S3 API.The IBM COS supports the most commonly used subset of Amazon S3 API operations. This document introduces the steps to use the Amazon Web Service (AWS) Command Line Interface (CLI) to manage your IBM COS service as a command line tool. 
 
 
 ## Using the AWS CLI S3 Tool
