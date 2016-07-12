@@ -14,10 +14,10 @@ dateAdded: June 8th, 2016
 Create a Bucket with the Make Bucket (mb) operation. 
 
 ```aws --endpoint-url=https://dsnet.example.com/ s3 mb s3://sample```
-## Delete a BucketDelete a Bucket with the Remove Bucket (rb) operation. The following exmaples assume that Bucket ``sample`` already exists.
+## Delete a BucketDelete a Bucket with the Remove Bucket (rb) operation. The following exmaples assume that Bucket ``sample`` already exists and is empty. 
 ``` 
 aws --endpoint-url=https://dsnet.example.com/ s3 rb s3://sample```
-Delete a Bucket and all Objects.```aws --endpoint-url=https://dsnet.example.com/ s3 rb s3://sample --force```The Remove Bucket (rb) operation with the ``--force`` parameter removes a Bucket and all of its Objects.
+To remove a non-empty bucket, you need to include the ``--force`` option to delete a Bucket and all Objects.```aws --endpoint-url=https://dsnet.example.com/ s3 rb s3://sample --force```The Remove Bucket (rb) operation with the ``--force`` parameter removes a Bucket and all of its Objects.
 ## Copy File/Object
 The Copy (cp) operation copies a local file or Object to another location. The following exmaples assume that the ``sample`` and ``sample2`` Buckets already exist.
 
@@ -35,11 +35,11 @@ Copy an Object between two Buckets.
 ```aws --endpoint-url=https://dsnet.example.com/ s3 cp path s3://sample/path --recursive --exclude "*.txt"```
 ## Download Object to a FileDownload an Object with the Copy (cp) and Move (mv) operations. The following examples assume that Bucket ``sample`` already exists.
 
-Copy an Object to a File.
+Copy an Object to a File. 
 ```aws --endpoint-url=https://dsnet.example.com/ s3 cp s3://sample/myFile.txt retrieve.txt```
-Move an Object to a File.
-```aws --endpoint-url=https://dsnet.example.com/ s3 mv s3://sample/myFile.txt retrieve.txt```## Move File
-Move a local file or Object to another location with the Move (mv) operation. The following exmaples assume that the ``sample`` and ``sample2`` Buckets already exist.Move (upload) a local File to the Vault
+Move an Object to a File. 
+```aws --endpoint-url=https://dsnet.example.com/ s3 mv s3://sample/myFile.txt retrieve.txt```**Note:** Both the ``cp`` and ``mv`` commands in the examples above download the Object to a local file. However, when using the ``cp`` command, the original Object remains in COS while a copy is downloaded to local. When using the ``mv`` command, the Object is moved from COS to local.  ## Move File
+Move a local file or Object to another location with the Move (mv) operation. The following examples assume that the ``sample`` and ``sample2`` Buckets already exist.Move (upload) a local File to the Bucket.
 ```aws --endpoint-url=https://dsnet.example.com/ s3 mv someFile.txt s3://sample```
 Move an Object within the same Bucket.
 ```aws --endpoint-url=https://dsnet.example.com/ s3 mv s3://sample/someFile.txt s3://sample/someFileBackup.txt

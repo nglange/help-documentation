@@ -42,7 +42,7 @@ The Administrator and Users are granted different access rights in Box Panel. Th
 {: #AccessCredentials} 
 
 
-After you log in Box Panel, you can obtain your Access Credentials from the Lock Box. The credentials are required when you access the COS service by using the API or CLI.
+After you log into Box Panel, you can obtain your Access Credentials from the Lock Box. The credentials are required when you access the COS service by using the API or CLI.
 
 1. From the Dashboard page, click the **Account** navigation menu on the top of the page.
 2. Then click **Lock Box** from the drop-down list.
