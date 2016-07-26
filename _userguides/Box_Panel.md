@@ -38,7 +38,7 @@ To get started with Box Panel, log in.
 ### Navigating the Box Panel Dashboard
 {: #navigating-the-box-panel-dashboard}
 
-On the Box Panel Dashboard, all users will see a Support Ticket section. In addition, the Administartor and Users with technical roles will also see a consolidated asset view of all the hosts of your IBM COS service in an Infrastructure section. 
+On the Box Panel Dashboard, all users will see a Support Ticket section. In addition, the Administrator and Users with technical roles will also see a consolidated asset view of all the hosts of your IBM COS service in an Infrastructure section. 
 
 
 On the right, additional details related to your account summary are displayed, including your **Lock Box Messages**, **Verbal Password**, **Bandwidth Quota**, and **Backup Quota**. 
