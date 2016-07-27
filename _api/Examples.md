@@ -14,12 +14,12 @@ dateAdded: June 8th, 2016
 Create a Bucket with the Make Bucket (mb) operation. 
 
 ```aws --endpoint-url=https://dsnet.example.com/ s3 mb s3://sample```
-## Delete a BucketDelete a Bucket with the Remove Bucket (rb) operation. The following exmaples assume that Bucket ``sample`` already exists and is empty. 
+## Delete a BucketDelete a Bucket with the Remove Bucket (rb) operation. The following examples assume that Bucket ``sample`` already exists and is empty. 
 ``` 
 aws --endpoint-url=https://dsnet.example.com/ s3 rb s3://sample```
 To remove a non-empty bucket, you need to include the ``--force`` option to delete a Bucket and all Objects.```aws --endpoint-url=https://dsnet.example.com/ s3 rb s3://sample --force```The Remove Bucket (rb) operation with the ``--force`` parameter removes a Bucket and all of its Objects.
 ## Copy File/Object
-The Copy (cp) operation copies a local file or Object to another location. The following exmaples assume that the ``sample`` and ``sample2`` Buckets already exist.
+The Copy (cp) operation copies a local file or Object to another location. The following examples assume that the ``sample`` and ``sample2`` Buckets already exist.
 
 Copy (upload) a local file to the Bucket.
 ```aws --endpoint-url=https://dsnet.example.com/ s3 cp someFile.txt s3://sample```

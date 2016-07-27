@@ -85,11 +85,10 @@ In most cases, you'll want to open a support ticket to get support. By using a t
 
 7. If your deployment is for a new cloud, check the **Deployment** box.
 
-	![ ](https://cloud.githubusercontent.com/assets/17212946/15032633/850d3d4a-1228-11e6-9b37-c20e5d32d9b9.png)
-
 	**Note:** Steps 8 and 9 can be skipped for non-urgent concerns.
 
  8. If the issue is urgent, you can check the **Open this Ticket as Urgent** box to escalate the ticket. This will prompt an acknowledgement that you consent to pay consulting charges if the issue is non-critical (critical items would include situations in which there are outages). 
+	![ ](https://cloud.githubusercontent.com/assets/17212946/15032633/850d3d4a-1228-11e6-9b37-c20e5d32d9b9.png)
  
  9. If you wish to open your ticket as **Urgent** and consent to pay the consulting charges for non-critical items, check the **I Agree** box. 
  

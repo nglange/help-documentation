@@ -14,7 +14,7 @@ dateAdded: June 8th, 2016
 The IBM COS API supports AWS Signature v2 and v4 Authentication.
 The AWS Signature v4 signing specification describes how to add authentication information to S3 requests.Requests using AWS authentication must be signed using the requesting user’s Access Key ID and Secret Access Key, collectively known as Access Credentials.
 The AWS Credentials file and AWS CLI Configuration file can contain one or more named set of Access Credentials, called named profiles. These files always have one set of Access Credentials which are identified as the ``[default]`` profile.
-For information on how to obtian the Access Credentials, see [Obtian the Access Credentials](../../userguides/user_accounts/index.html#AccessCredentials).The order of precedence using for Access Credentials is as follows:
+For information on how to obtain the Access Credentials, see [Obtain the Access Credentials](../../userguides/user_accounts/index.html#AccessCredentials).The order of precedence using for Access Credentials is as follows:
 * Passing Credentials as Command Line Options
 * Setting Credentials in Environment Variables* Setting Credentials in the Shared Credentials File
 ### Passing Credentials as Command Line Options

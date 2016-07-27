@@ -8,7 +8,7 @@ author: Mao Jia
 dateAdded: January 14th, 2016
 ---
 
-Your **IBM COS Support** team is available 24 hours a day, seven days a week.  If you are experiencing an issue, please do the following things:
+Your **IBM COS Support** team is available 24 hours a day, seven days a week.  If you are experiencing an issue, please do the following:
 
 **1. Collect all applicable information for the issue:**
   
