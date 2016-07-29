@@ -10,9 +10,9 @@ dateAdded: April 14, 2016
 
 ## Getting Started with Box Panel
 
-The Box Panel interface gives you a single, consolidated view of your IBM Cloud Object Storage (COS) environment. Its self-service access enables you to  create support tickets, leverage central authentication for logins and user permissions, monitor various functions, and view your invoices, easily. 
+The Box Panel interface gives you a single, consolidated view of your IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) environment. Its self-service access enables you to  create support tickets, leverage central authentication for logins and user permissions, monitor various functions, and view your invoices, easily. 
 
-This user guide gives you an end-to-end overview, so you can get started using Box Panel to monitor and control your IBM COS environment. 
+This user guide gives you an end-to-end overview, so you can get started using Box Panel to monitor and control your COS Dedicated IBM Managed environment. 
 
 ### Table of Contents
 
@@ -30,7 +30,7 @@ This user guide gives you an end-to-end overview, so you can get started using B
 To get started with Box Panel, log in. 
 
 1. Go to the URL `https://boxpanel.bluebox.net` to be directed to the login page.
-2. Log into your Box Panel account with your [login credentials](../user_accounts/index.html). If you are a secondary contact and do not have access to your COS environment, you can ask the Administrator to [create a user account](#create-user) for you.
+2. Log into your Box Panel account with your [login credentials](../user_accounts/index.html). If you are a secondary contact and do not have access to your COS Dedicated IBM Managed environment, you can ask the Administrator to [create a user account](#create-user) for you.
 3. After logging in, you'll be directed automatically to the Box Panel Dashboard.
 
 
@@ -38,7 +38,7 @@ To get started with Box Panel, log in.
 ### Navigating the Box Panel Dashboard
 {: #navigating-the-box-panel-dashboard}
 
-On the Box Panel Dashboard, all users will see a Support Ticket section. In addition, the Administrator and Users with technical roles will also see a consolidated asset view of all the hosts of your IBM COS service in an Infrastructure section. 
+On the Box Panel Dashboard, all users will see a Support Ticket section. In addition, the Administrator and Users with technical roles will also see a consolidated asset view of all the hosts of your COS Dedicated IBM Managed service in an Infrastructure section. 
 
 
 On the right, additional details related to your account summary are displayed, including your **Lock Box Messages**, **Verbal Password**, **Bandwidth Quota**, and **Backup Quota**. 
@@ -48,14 +48,14 @@ Use the navigation bar at the top of the page to access other Box Panel features
 ### Help Documentation
 {: #help-documentation}
 
-Click **Docs** from the navigation bar and select **IBM COS** to view the help document for IBM COS.
+Click **Docs** from the navigation bar and select **COS Dedicated IBM Managed** to view the help document for COS Dedicated IBM Managed.
 
 
 
 ### Getting Support 
 {: #getting-support}
 
-**Note: For immediate support, you can call COS Support at 1-800-613-4305 or email us at support@bluebox.net.**
+**Note: For immediate support, you can call COS Dedicated IBM Managed Support at 1-800-613-4305 or email us at support@bluebox.net.**
 
 In most cases, you'll want to open a support ticket to get support. By using a ticket, you'll have a record of the issue and the solutions taken to address your issue, complete with logs of your chat sessions with the customer support team.
 
@@ -88,6 +88,7 @@ In most cases, you'll want to open a support ticket to get support. By using a t
 	**Note:** Steps 8 and 9 can be skipped for non-urgent concerns.
 
  8. If the issue is urgent, you can check the **Open this Ticket as Urgent** box to escalate the ticket. This will prompt an acknowledgement that you consent to pay consulting charges if the issue is non-critical (critical items would include situations in which there are outages). 
+	
 	![ ](https://cloud.githubusercontent.com/assets/17212946/15032633/850d3d4a-1228-11e6-9b37-c20e5d32d9b9.png)
  
  9. If you wish to open your ticket as **Urgent** and consent to pay the consulting charges for non-critical items, check the **I Agree** box. 

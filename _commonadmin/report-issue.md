@@ -8,7 +8,7 @@ author: Mao Jia
 dateAdded: January 14th, 2016
 ---
 
-Your **IBM COS Support** team is available 24 hours a day, seven days a week.  If you are experiencing an issue, please do the following:
+Your **COS Dedicated IBM Managed Support** team is available 24 hours a day, seven days a week.  If you are experiencing an issue, please do the following:
 
 **1. Collect all applicable information for the issue:**
   
@@ -22,7 +22,7 @@ Your **IBM COS Support** team is available 24 hours a day, seven days a week.  I
   * Any additional useful information
 
 
-**2. Open a new ticket with IBM COS Support** by using one of the following methods:
+**2. Open a new ticket with COS Dedicated IBM Managed Support** by using one of the following methods:
 
 * email: support@bluebox.net
 * chat: chat.bluebox.net

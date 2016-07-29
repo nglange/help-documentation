@@ -38,7 +38,7 @@ Copy an Object between two Buckets.
 Copy an Object to a File. 
 ```aws --endpoint-url=https://dsnet.example.com/ s3 cp s3://sample/myFile.txt retrieve.txt```
 Move an Object to a File. 
-```aws --endpoint-url=https://dsnet.example.com/ s3 mv s3://sample/myFile.txt retrieve.txt```**Note:** Both the ``cp`` and ``mv`` commands in the examples above download the Object to a local file. However, when using the ``cp`` command, the original Object remains in COS while a copy is downloaded to local. When using the ``mv`` command, the Object is moved from COS to local.  ## Move File
+```aws --endpoint-url=https://dsnet.example.com/ s3 mv s3://sample/myFile.txt retrieve.txt```**Note:** Both the ``cp`` and ``mv`` commands in the examples above download the Object to a local file. However, when using the ``cp`` command, the original Object remains in COS Dedicated IBM Managed while a copy is downloaded to local. When using the ``mv`` command, the Object is moved from COS Dedicated IBM Managed to local.  ## Move File
 Move a local file or Object to another location with the Move (mv) operation. The following examples assume that the ``sample`` and ``sample2`` Buckets already exist.Move (upload) a local File to the Bucket.
 ```aws --endpoint-url=https://dsnet.example.com/ s3 mv someFile.txt s3://sample```
 Move an Object within the same Bucket.

@@ -11,7 +11,7 @@ dateAdded: June 8th, 2016
 The AWS CLI can be [downloaded from Amazon](http://aws.amazon.com/cli/). Make sure that you download a version higher than 1.7.42.
 For instructions on how to install the AWS CLI, see the [Amazon CLI documentation](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).
 ## Configuring Authentication
-The IBM COS API supports AWS Signature v2 and v4 Authentication.
+The COS Dedicated IBM Managed API supports AWS Signature v2 and v4 Authentication.
 The AWS Signature v4 signing specification describes how to add authentication information to S3 requests.Requests using AWS authentication must be signed using the requesting user’s Access Key ID and Secret Access Key, collectively known as Access Credentials.
 The AWS Credentials file and AWS CLI Configuration file can contain one or more named set of Access Credentials, called named profiles. These files always have one set of Access Credentials which are identified as the ``[default]`` profile.
 For information on how to obtain the Access Credentials, see [Obtain the Access Credentials](../../userguides/user_accounts/index.html#AccessCredentials).The order of precedence using for Access Credentials is as follows:
@@ -61,10 +61,10 @@ $ aws --profile pool2 s3 ls
 
 ## Configuring the Storage Endpoint
 The AWS CLI sends all requests to ``s3.amazonaws.com`` by default.
-To send requests to IBM COS, change the method to use a different hostname or IP address.Set the ``--endpoint-url`` option in the AWS CLI command with the following IP address:
+To send requests to COS Dedicated IBM Managed, change the method to use a different hostname or IP address.Set the ``--endpoint-url`` option in the AWS CLI command with the following IP address:
 **Placeholder for IP address and hostname**
 **Note:** The AWS CLI interprets the http(s) portion of this endpoint and infer encrypted or plain text from the URL.
 
-The COS API supports both Resource Path and Virtual Host Addressing.### Using Resource Path AddressingUse the ``--endpoint-url`` option of ``aws configure``:```
+The COS Dedicated IBM Managed API supports both Resource Path and Virtual Host Addressing.### Using Resource Path AddressingUse the ``--endpoint-url`` option of ``aws configure``:```
  aws --endpoint-url http://<IP_address> s3
 ``` ## Using Other OptionsAdditional options can be used in the main AWS CLI command. More information and examples can be found in the [Using High-Level s3 Commands with the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html).

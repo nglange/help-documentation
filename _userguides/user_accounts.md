@@ -1,6 +1,6 @@
 ---
 layout: page 
-title: "IBM Cloud Object Storage Accounts" 
+title: "COS Dedicated IBM Managed Accounts" 
 featured: true 
 weight: 1 
 tags: [getting started, Box Panel] 
@@ -8,11 +8,11 @@ author: Mao Jia
 dateAdded: June 22, 2016 
 ---
 
-## IBM Cloud Object Storage Administrator and User
+## COS Dedicated IBM Managed Administrator and User
 
-The IBM Cloud Object Storage (COS) supports two types of user accounts: Administrator and User.
+The IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) supports two types of user accounts: Administrator and User.
 
-The Administrator is the primary contact of your organization. Upon setup of your COS environment, the Administrator account is created. If you are a secondary contact and do not have access to your COS environment, you can ask the Administrator to [create a user account](../Box_Panel/index.html#create-user) for you. 
+The Administrator is the primary contact of your organization. Upon setup of your COS Dedicated IBM Managed environment, the Administrator account is created. If you are a secondary contact and do not have access to your COS Dedicated IBM Managed environment, you can ask the Administrator to [create a user account](../Box_Panel/index.html#create-user) for you. 
 
 For both Administrator and User, once your account is created, you will receive an email from Blue Box, which contains the following information:
 
@@ -42,7 +42,7 @@ The Administrator and Users are granted different access rights in Box Panel. Th
 {: #AccessCredentials} 
 
 
-After you log into Box Panel, you can obtain your Access Credentials from the Lock Box. The credentials are required when you access the COS service by using the API or CLI.
+After you log into Box Panel, you can obtain your Access Credentials from the Lock Box. The credentials are required when you access the COS Dedicated IBM Managed service by using the API or CLI.
 
 1. From the Dashboard page, click the **Account** navigation menu on the top of the page.
 2. Then click **Lock Box** from the drop-down list.

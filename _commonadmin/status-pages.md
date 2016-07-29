@@ -9,7 +9,7 @@ dateAdded: May 5th, 2015
 
 
 
-At the IBM Cloud Object Storage Group, we strive to keep our customers informed of any changes in network status as well as maintenance windows and upgrades.
+At the COS Dedicated IBM Managed Group, we strive to keep our customers informed of any changes in network status as well as maintenance windows and upgrades.
 
 
 _On the Web_
