@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "IBM Cloud Object Storage AWS CLI Examples"
+title:  "COS Dedicated IBM Managed AWS CLI Examples"
 featured: true
 weight: 5
 tags: [getting started, api, example]
