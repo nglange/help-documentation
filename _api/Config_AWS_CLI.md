@@ -61,10 +61,9 @@ $ aws --profile pool2 s3 ls
 
 ## Configuring the Storage Endpoint
 The AWS CLI sends all requests to ``s3.amazonaws.com`` by default.
-To send requests to COS Dedicated IBM Managed, change the method to use a different hostname or IP address.Set the ``--endpoint-url`` option in the AWS CLI command with the following IP address:
-**Placeholder for IP address and hostname**
-**Note:** The AWS CLI interprets the http(s) portion of this endpoint and infer encrypted or plain text from the URL.
+To send requests to COS Dedicated IBM Managed, change the method to use a different hostname or IP address.Set the ``--endpoint-url`` option in the AWS CLI command with the [endpoint URL provided in the Lock Box](../../userguides/user_accounts/index.html#AccessCredentials).
+**Note:** The AWS CLI interprets the http(s) portion of this endpoint and infer encrypted or plain text from the URL.
 
 The COS Dedicated IBM Managed API supports both Resource Path and Virtual Host Addressing.### Using Resource Path AddressingUse the ``--endpoint-url`` option of ``aws configure``:```
- aws --endpoint-url http://<IP_address> s3
+ aws --endpoint-url http://<endpoint_URL> s3
 ``` ## Using Other OptionsAdditional options can be used in the main AWS CLI command. More information and examples can be found in the [Using High-Level s3 Commands with the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html).
