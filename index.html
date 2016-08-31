@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="search">
+    <label for="search">Welcome to IBM Cloud Object Storage Help</label>
+    <div class="full-view__search hide">
+      <a href="" class="x hide">X</a>
+      <ul id="results-container"></ul>
+      <ul class="results--container"></ul>
+
+    </div>
+    <div class="input-container">
+      <label for="search__fullview" class="hide search--label">Search IBM Cloud Object Storage Help</label>
+      <input type="text" id="search-input" placeholder="" name="search" class="search__minview">
+      <img src="./img/search.svg" class="search-icon" />
+    </div>
+  </div>
+
+  <div class="top-level">
+
+
+
+    <ul class="top-post-list">
+      <li class="flip-container">
+        <div class="flippable">
+          <div class="side-a">
+            <a href="{{site.baseurl}}/gettingstarted">
+              <img src="{{ site.baseurl }}/img/gettingstarted.svg">
+              <p>
+                Getting <span>Started</span>
+              </p>
+            </a>
+          </div>
+          <div class="side-b">
+            <div class="content">
+              <a href="{{site.baseurl}}/gettingstarted" class="main-link">
+                <h1>Getting <span>Started</span></h1>
+              </a>
+              {% for page in site.gettingstarted limit:5 %}
+                {% if page.title %}
+                  <a href="{{page.url | prepend: site.baseurl}}">{{page.title}}</a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="flip-container">
+        <div class="flippable">
+          <div class="side-a">
+            <a href="{{site.baseurl}}/troubleshooting">
+              <img src="{{site.baseurl}}/img/troubleshooting.svg">
+              <p>
+                Trouble<span>shooting</span>
+              </p>
+            </a>
+          </div>
+          <div class="side-b">
+            <div class="content">
+              <a href="{{site.baseurl}}/troubleshooting" class="main-link">
+                <h1>Trouble<span>shooting</span></h1>
+              </a>
+              {% for page in site.troubleshooting limit:3 %}
+                {% if page.title %}
+                  <a href="{{ site.baseurl }}{{page.url}}">{{page.title}}</a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <!-- Script pointing to jekyll-search.js -->
+  <script src="{{ site.baseurl }}/js/vendor/simple-jekyll-search.js" type="text/javascript"></script>
+
+
+  <script>
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{site.baseurl}}/search.json',
+        searchResultTemplate: '<li class="search-item"><a href="{url}" class="item-title">{title}</a><ul class="tag--list">{tags}</ul></li>'
+      });
+  </script>
+
+</div>
