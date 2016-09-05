@@ -10,7 +10,7 @@ dateAdded: April 14, 2016
 
 ## Getting Started with Box Panel
 
-The Box Panel interface gives you a single, consolidated view of your IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) environment. Its self-service access enables you to  create support tickets, leverage central authentication for logins and user permissions, monitor various functions, and view your invoices, easily. 
+The Box Panel interface gives you a single, consolidated view of your IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) environment. Its self-service access enables you to  create support tickets, leverage central authentication for logins and user permissions, monitor various functions, and view your invoices. 
 
 This user guide gives you an end-to-end overview, so you can get started using Box Panel to monitor and control your COS Dedicated IBM Managed environment. 
 
@@ -21,7 +21,8 @@ This user guide gives you an end-to-end overview, so you can get started using B
  * [Help Documentation](#help-documentation)
  * [Getting Support](#getting-support)
  * [Managing Billing](#managing-billing)
- * [Creating New User](#create-user)
+ * [Creating Box Panel User](#create-user)
+ * [Creating COS User](#create-cos-user)
 
 
 ### Logging In 
@@ -30,7 +31,7 @@ This user guide gives you an end-to-end overview, so you can get started using B
 To get started with Box Panel, log in. 
 
 1. Go to the URL `https://boxpanel.bluebox.net` to be directed to the login page.
-2. Log into your Box Panel account with your [login credentials](../user_accounts/index.html). If you are a secondary contact and do not have access to your COS Dedicated IBM Managed environment, you can ask the Administrator to [create a user account](#create-user) for you.
+2. Log into your Box Panel account with your [login credentials](../user_accounts/index.html). If you are a secondary contact and do not have access yet, you can ask the Administrator to [create a Box Panel user account](#create-user) for you.
 3. After logging in, you'll be directed automatically to the Box Panel Dashboard.
 
 
@@ -38,8 +39,7 @@ To get started with Box Panel, log in.
 ### Navigating the Box Panel Dashboard
 {: #navigating-the-box-panel-dashboard}
 
-On the Box Panel Dashboard, all users will see a Support Ticket section. In addition, the Administrator and Users with technical roles will also see a consolidated asset view of all the hosts of your COS Dedicated IBM Managed service in an Infrastructure section. 
-
+From the Box Panel Dashboard, you can see a consolidated asset view of all the hosts of your COS Dedicated IBM Managed service in an Infrastructure section. Also, there's a Support Ticket section listing all the tickets related to your environment. 
 
 On the right, additional details related to your account summary are displayed, including your **Lock Box Messages**, **Verbal Password**, **Bandwidth Quota**, and **Backup Quota**. 
 
@@ -123,9 +123,22 @@ At the end of each month, a billing report is sent to the Administrator’s emai
 For further billing support, please contact the Support Team and we will be happy to assist you.
 
 
-### Creating New User
+### Creating Box Panel User
 {: #create-user}
 
-**Note:** Only Administrator can create new Users. 
+Only Administrator can create new Users on Box Panel. 
 
-To create a User, [submit a ticket](#create-ticket) to request Support staff to add a new User.  
+To create a Box Panel User, following these steps:
+
+1. Click **Account** from the navigation bar at the top of the page and then select **Account Contacts**. 
+2. On the Account Contacts page, click the **Add Contact** button at the upper-right corner of the page.
+3. In the Add a contact window, input the contact information of the User and then click **Save Details**.   
+
+### Creating COS User
+{: #create-cos-user}
+
+Only Administrator can create new users for COS Dedicated IBM Managed. 
+
+To create a new user for COS Dedicated IBM Managed, [submit a ticket](#create-ticket) to request Support staff to add the user. 
+
+In later releases, Administrator shall be able to create COS Dedicated IBM Managed Users from Box Panel directly. However, for the current release, new users can only be created via support tickets.
