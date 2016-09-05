@@ -1,6 +1,6 @@
 ---
 layout: page 
-title: "COS Dedicated IBM Managed Accounts" 
+title: "Box Panel Customer Accounts" 
 featured: true 
 weight: 1 
 tags: [getting started, Box Panel] 
@@ -8,7 +8,7 @@ author: Mao Jia
 dateAdded: June 22, 2016 
 ---
 
-## COS Dedicated IBM Managed Administrator and User
+## Box Panel Administrator and User
 
 The IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) supports two types of user accounts on Box Panel: Administrator and User.
 
