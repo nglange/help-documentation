@@ -1,16 +1,41 @@
 ---
 layout: page
-title:  "Installing and Configuring the AWS CLI"
+title:  "Using AWS CLI"
 featured: true
 weight: 3
-tags: [getting started, api, install, configure, AWS, CLI]
+tags: [getting started, aws, cli, overview]
 author: Mao Jia
 dateAdded: June 8th, 2016
 ---
-## Installing the AWS CLI
-The AWS CLI can be [downloaded from Amazon](http://aws.amazon.com/cli/). Make sure that you download a version higher than 1.7.42.
+
+## Table of Contents
+* [Overview](#overview)
+* [Installing the AWS CLI](#installing-cli)
+* [Configuring Authentication](#configuring-authentication)
+* [Configuring the Storage Endpoint](#configuring-storage-endpoint)
+* [Using Other Options](#other-options)
+* [Supported Command Line Options](#supported-command-line)
+
+## Overview
+{: #overview}
+The IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) Application Programming Interface (API) enables application developers to use existing Amazon Simple Storage Service (S3) applications to access object buckets. When an object bucket is deployed, it is automatically made available through the Amazon S3 API.COS Dedicated IBM Managed supports the most commonly used subset of Amazon S3 API operations. This document introduces the steps to use the Amazon Web Service (AWS) Command Line Interface (CLI) to manage your COS Dedicated IBM Managed service as a command line tool. 
+
+
+### Using the AWS CLI S3 Tool
+{: #using-cli}
+
+Using the AWS CLI in COS Dedicated IBM Managed requires a slight modification: setting the S3 endpoint. Other minor variations are outlined as follows.
+
+For detailed information on SDK classes and functions, see the [AWS CLI S3 API Reference](http://docs.aws.amazon.com/cli/latest/reference/s3/index.html).
+The examples in this document were generated using AWS CLI S3 1.7.36
+
+Some sections refer to home directories. The user’s home directory vary per platform:| OS        |  Location           ||-----------|---------------------|| Linux     | /home/{username} ~/ || Windows 7 | %USERPROFILE%\      || Mac OS X  | /Users/{username}   |
+This guide assumes a Unix/Linux development environment in the examples.#### Using Secure HTTP
+Take one of the following steps to use secure HTTP connections:* Configure the host to trust the Manager’s Certificate Authority (CA). Retrieve the Manager CA and follow the operating system’s instructions to install that CA.* Configure COS Dedicated IBM Managed with an external CA that the host already trusts internally or externally.* Configure the SDK to ignore self-signed certificates at connect if the language supports it. This method is not recommended as it exposes your service to risk; the code will automatically trust any certificate.## Installing the AWS CLI
+{: #installing-cli}The AWS CLI can be [downloaded from Amazon](http://aws.amazon.com/cli/). Make sure that you download a version higher than 1.7.42.
 For instructions on how to install the AWS CLI, see the [Amazon CLI documentation](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).
 ## Configuring Authentication
+{: #configuring-authentication}
 The COS Dedicated IBM Managed API supports AWS Signature v2 and v4 Authentication.
 The AWS Signature v4 signing specification describes how to add authentication information to S3 requests.Requests using AWS authentication must be signed using the requesting user’s Access Key ID and Secret Access Key, collectively known as Access Credentials.
 The AWS Credentials file and AWS CLI Configuration file can contain one or more named set of Access Credentials, called named profiles. These files always have one set of Access Credentials which are identified as the ``[default]`` profile.
@@ -60,10 +85,18 @@ $ aws --profile pool2 s3 ls
 ```
 
 ## Configuring the Storage Endpoint
+{: #configuring-storage-endpoint}
 The AWS CLI sends all requests to ``s3.amazonaws.com`` by default.
 To send requests to COS Dedicated IBM Managed, change the method to use a different hostname or IP address.Set the ``--endpoint-url`` option in the AWS CLI command with the [endpoint URL provided in the Lock Box](../../userguides/user_accounts/index.html#AccessCredentials).
 **Note:** The AWS CLI interprets the http(s) portion of this endpoint and infer encrypted or plain text from the URL.
 
 The COS Dedicated IBM Managed API supports both Resource Path and Virtual Host Addressing.### Using Resource Path AddressingUse the ``--endpoint-url`` option of ``aws configure``:```
  aws --endpoint-url http://<endpoint_URL> s3
-``` ## Using Other OptionsAdditional options can be used in the main AWS CLI command. More information and examples can be found in the [Using High-Level s3 Commands with the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html).
+``` ## Using Other Options
+{: #other-options}Additional options can be used in the main AWS CLI command. More information and examples can be found in the [Using High-Level s3 Commands with the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html).
+## Supported Command Line Options
+{: #supported-command-line}
+S3 operations the COS Dedicated IBM Managed API supports might not map directly to these AWS CLI commands. The supported AWS CLI command lines are as follows. The unsupported options are noted.
+
+| Command  | Description         | Supported   | Unsupported options  |
+|----------|---------------------|-------------|----------------------|| cp       | Copies a local file or S3 Object to another location locally or in S3. | Yes | --acl Bucket-owner-read option --acl Bucket-owner-full-control --website -redirect --source-region --grants full={emailAddress\|userName} || ls       | List S3 Objects and common prefixes under a prefix or all S3 Buckets. | Yes | --output || mb       | Creates an S3 Bucket.  |  Yes |   || mv       | Moves a local file or S3 Object to another location locally or in S3. | Yes   | --acl Bucket-owner-read option --acl Bucket-owner-full-control --website -redirect --source-region --grants full={emailAddress\|userName} || rb       | Deletes an S3 Bucket.  | Yes |  || sync     | Syncs directories and S3 prefixes. Recursively copies new and updated files from the source directory to the destination. Only creates folders in the destination if they contain one or more files. | Yes | --acl Bucket-owner-read option --acl Bucket-owner-full-control --website -redirect --source-region --grants full={emailAddress\|userName} || website | Set the website configuration for a Bucket. |No| |

@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "COS Dedicated IBM Managed AWS CLI Examples"
+title:  "AWS CLI Examples"
 featured: true
-weight: 5
+weight: 4
 tags: [getting started, api, example]
 author: Mao Jia
 dateAdded: June 8th, 2016

@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "S3 Features Supported by COS Dedicated IBM Managed API"
+title:  "S3 Features Supported"
 featured: true
-weight: 1
+weight: 5
 tags: [getting started, api, S3]
 author: Mao Jia
 
@@ -15,6 +15,7 @@ dateAdded: June 29th, 2016
 * [Common Headers and Error Responses](#headers-and-error-response)
 * [Access Control Lists](#access-control-list)
 * [Operations on the Service](#operations-on-service)
+* [Operations on Buckets](#operations-on-buckets)
 * [Operations on Objects](#operations-on-objects)
 
 ##  Overview
@@ -61,7 +62,7 @@ For more information about the request headers, see [S3 API Common Request Heade
 **GET services supported by COS Dedicated IBM Managed:**| Operation | Supported | Notes |
 |-----------|-----------|-------|| Request Headers | Yes | || Response Headers | Yes | || Response Elements | Yes |Bucket Owner and Bucket Creation Date not supported. A date of Thu, 01 Jan 1970 00:00:00 GMT will be returned. |
 For more information, see [Common Headers](#headers-and-error-response).
-## Operations on BucketsThe following table describes which bucket operations are supported in COS Dedicated IBM Managed API. It also indicates some operations that, while not supported, can be accomplished using another mechanism such as the Manager Web Interface or are planned for inclusion in future API versions. Any S3 API operation that is not present is not supported.
+## Operations on Buckets{: #operations-on-buckets}The following table describes which bucket operations are supported in COS Dedicated IBM Managed API. It also indicates some operations that, while not supported, can be accomplished using another mechanism such as the Manager Web Interface or are planned for inclusion in future API versions. Any S3 API operation that is not present is not supported.
 **Bucket operations supported by COS Dedicated IBM Managed:**
 | Operation | Supported | Note |
 |-----------|-----------|------|| DELETE Bucket | Yes | Requestor must have Bucket Provisioner role assigned and be granted ``FULL_CONTROL`` permission for bucket. Provisioning API configuration must be enabled and set to ``CREATE`` and ``DELETE`` || DELETE Bucket CORS | Yes | Requestor must be granted ``FULL_CONTROL`` permission for bucket. || DELETE Bucket lifecycle | No | || DELETE Bucket policy | No | Use Manager API. || DELETE Bucket tagging | Yes | || DELETE Bucket website | No | || GET Bucket (List Objects) | Yes | |
@@ -80,7 +81,8 @@ For more information about the request headers, see [S3 API Common Request Heade
 The following table describes which object operations are supported in the COS Dedicated IBM Managed API. It describes all operations on objects available as part of the S3 API. Versioning is supported for ``DELETE``, ``GET`` and ``PUT`` where the user can provide a version ID to delete and get a specific version.
 **Object Operations supported by COS Dedicated IBM Managed:**
 
-| Operation | Supported | Note || DELETE Object | Yes | || DELETE Multiple Objects | Yes | || GET Object | Yes | || GET Object ACL | Yes | || GET Object torrent | No | || HEAD Object | Yes | || OPTIONS Object | Yes | || POST Object | Yes | || POST Object restore | No | || PUT Object | Yes | || PUT Object ACL | Yes | || PUT Object (Copy) | Yes | Copying objects results in a full-Width read and then a full-Width write. These full copies will result in high bandwidth utilization within the system until the copy is complete. || Initiate Multipart Upload | Yes | || Upload Part | Yes || Upload Part (Copy) | Yes | |
+| Operation | Supported | Note |
+|------|------|----|| DELETE Object | Yes | || DELETE Multiple Objects | Yes | || GET Object | Yes | || GET Object ACL | Yes | || GET Object torrent | No | || HEAD Object | Yes | || OPTIONS Object | Yes | || POST Object | Yes | || POST Object restore | No | || PUT Object | Yes | || PUT Object ACL | Yes | || PUT Object (Copy) | Yes | Copying objects results in a full-Width read and then a full-Width write. These full copies will result in high bandwidth utilization within the system until the copy is complete. || Initiate Multipart Upload | Yes | || Upload Part | Yes || Upload Part (Copy) | Yes | |
 | Complete Multipart Upload | Yes | || Abort Multipart Upload | Yes | || List Parts | Yes | |
  
 For more information, see [S3 API Operations on Objects.](http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectOps.html) and [Common Headers](#headers-and-error-response).
