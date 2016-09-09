@@ -48,7 +48,7 @@ Use the navigation bar at the top of the page to access other Box Panel features
 ### Help Documentation
 {: #help-documentation}
 
-Click **Docs** from the navigation bar and select **COS Dedicated IBM Managed** to view the help document for COS Dedicated IBM Managed.
+Click **Docs** from the navigation bar and select **Cloud Object Storage** to view the help document for COS Dedicated IBM Managed.
 
 
 
