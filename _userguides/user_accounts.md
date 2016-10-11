@@ -57,4 +57,4 @@ After you log into Box Panel, you can obtain your Access Credentials and endpoin
 2. Then click **Lock Box** from the drop-down list.
 3. Click the **Subject** of your Lock Box message to open and obtain your Access Credentials.
 
-**Note:** If a COS user does not have Box Panel access, the administrator will be responsible for providing the credentials to the user.
+**Note:** If you do not have Box Panel access, contact the administrator to provide the credentials to you.
