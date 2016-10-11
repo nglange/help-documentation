@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "API overview"
+title:  "API Overview"
 featured: true
 weight: 1
 tags: [getting started, API, overview]

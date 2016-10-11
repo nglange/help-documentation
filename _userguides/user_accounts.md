@@ -10,11 +10,11 @@ dateAdded: June 22, 2016
 
 ## Box Panel Administrator and User
 
-The IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) supports two types of user accounts on Box Panel: Administrator and User.
+The IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) supports two types of user accounts on Box Panel: administrator and user.
 
-The Administrator is the primary contact of your organization. Upon setup of your COS Dedicated IBM Managed environment, the Administrator account is created. If you are a secondary contact and do not have access to Box Panel yet, you can ask the Administrator to [create a Box Panel user account](../Box_Panel/index.html#create-user) for you. 
+The administrator is the primary contact of your organization. Upon setup of your COS Dedicated IBM Managed environment, the administrator account is created. If you are a secondary contact and do not have access to Box Panel yet, you can ask the administrator to [create a Box Panel user account](../Box_Panel/index.html#create-user) for you. 
 
-For both Administrator and User, once your account is created, you will receive an email from Blue Box, which contains the following information:
+For both administrator and user, once your account is created, you will receive an email from Blue Box, which contains the following information:
 
 ![Confirm Account Email](../../../img/confirm_account.png)
 
@@ -28,7 +28,7 @@ After logging in, you’ll be directed automatically to the Box Panel Dashboard.
 
 ### Administrator and User Roles
 
-The Administrator and Users are granted different access rights in Box Panel. 
+The administrator and users are granted different access rights in Box Panel. 
 
 
 |    |Create Box Panel user |	Create COS user | Support, chat and create tickets |	View infrastructure | Receive weekly and monthly reports |	Manage all user accounts	| Manage one's own account|

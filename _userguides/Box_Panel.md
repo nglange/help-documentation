@@ -31,7 +31,7 @@ This user guide gives you an end-to-end overview, so you can get started using B
 To get started with Box Panel, log in. 
 
 1. Go to the URL `https://boxpanel.bluebox.net` to be directed to the login page.
-2. Log into your Box Panel account with your [login credentials](../user_accounts/index.html). If you are a secondary contact and do not have access yet, you can ask the Administrator to [create a Box Panel user account](#create-user) for you.
+2. Log into your Box Panel account with your [login credentials](../user_accounts/index.html). If you are a secondary contact and do not have access yet, you can ask the administrator to [create a Box Panel user account](#create-user) for you.
 3. After logging in, you'll be directed automatically to the Box Panel Dashboard.
 
 
@@ -118,7 +118,7 @@ To have a written conversation with one of our support team experts about the to
 ### Managing Billing 
 {: #managing-billing}
 
-At the end of each month, a billing report is sent to the Administrator’s email address. For more information, see [How do I view my bill?](../../commonadmin/view-my-bill/index.html)
+At the end of each month, a billing report is sent to the administrator’s email address. For more information, see [How do I view my bill?](../../commonadmin/view-my-bill/index.html)
 
 For further billing support, please contact the Support Team and we will be happy to assist you.
 
@@ -126,19 +126,22 @@ For further billing support, please contact the Support Team and we will be happ
 ### Creating Box Panel User
 {: #create-user}
 
-Only Administrator can create new Users on Box Panel. 
+Only administrator can create new users on Box Panel. 
 
-To create a Box Panel User, following these steps:
+To create a Box Panel user, follow these steps:
 
 1. Click **Account** from the navigation bar at the top of the page and then select **Account Contacts**. 
 2. On the Account Contacts page, click the **Add Contact** button at the upper-right corner of the page.
-3. In the Add a contact window, input the contact information of the User and then click **Save Details**.   
+3. In the Add a contact window, input the contact information of the user and then click **Save Details**.   
+
+The new user will receive an email from Blue Box to guide him/her to set the account password. For more information, see [Box Panel Administrator and User](../Box_Panel/index.html)
+
 
 ### Creating COS User
 {: #create-cos-user}
 
-Only Administrator can create new users for COS Dedicated IBM Managed. 
+Only administrator can create new users for COS Dedicated IBM Managed. 
 
 To create a new user for COS Dedicated IBM Managed, [submit a ticket](#create-ticket) to request Support staff to add the user. 
 
-In later releases, Administrator shall be able to create COS Dedicated IBM Managed Users from Box Panel directly. However, for the current release, new users can only be created via support tickets.
+In later releases, administrator shall be able to create COS Dedicated IBM Managed users from Box Panel directly. However, for the current release, new users can only be created via support tickets.
