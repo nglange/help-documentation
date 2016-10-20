@@ -18,7 +18,7 @@ dateAdded: June 8th, 2016
 
 ## Overview
 {: #overview}
-The IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) Application Programming Interface (API) enables application developers to use an implementation of the Amazon Simple Storage Service (S3) applications to access object buckets. When an object bucket is deployed, it is automatically made available through the S3 API.COS Dedicated IBM Managed supports the most commonly used subset of S3 API operations. This document introduces the steps to use the Amazon Web Service (AWS) Command Line Interface (CLI) to manage your COS Dedicated IBM Managed service as a command line tool. 
+The IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) Application Programming Interface (API) enables application developers to use an implementation of the Amazon Simple Storage Service (S3) applications to access object buckets. When an object bucket is deployed, it is automatically made available through the S3 API.COS Dedicated IBM Managed supports the most commonly used subset of S3 API operations. This document introduces the steps to use the Amazon Web Service (AWS) Command Line Interface (CLI) to manage your COS Dedicated IBM Managed service as a command line tool.
 
 
 ### Using the AWS CLI S3 API Tool
@@ -64,20 +64,20 @@ Some sections refer to home directories. The user’s home directory vary per pl
 For example, the command output of ``aws configure`` can be as follows:
 
 ```
-$ aws configureAWS Access Key ID [None]: #AKIAIOSFODNN7EXAMPLE# AWS Secret Access Key [None]: #wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY# Default region name [None]: Default output format [None]: #json# ```* The Access Key will be stored in ``~/.aws/credentials``.* The Secret Key will be stored in ``~/.aws/credentials``.* The Region does not need to be set. The user can press the Return key to skip this. The Region will be stored in ``~/.aws/config``.* The Output Format will be stored in ``~/.aws/config``.    
+$ aws configureAWS Access Key ID [None]: #AKIAIOSFODNN7EXAMPLE#AWS Secret Access Key [None]: #wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY#Default region name [None]:Default output format [None]: #json#```* The Access Key will be stored in ``~/.aws/credentials``.* The Secret Key will be stored in ``~/.aws/credentials``.* The Region does not need to be set. The user can press the Return key to skip this. The Region will be stored in ``~/.aws/config``.* The Output Format will be stored in ``~/.aws/config``.
 For more information on ``aws configure``, see [Configuring the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
 
 To support multiple identities, AWS Credential Files can have Named Profiles.Use ```aws configure — profile {profileName}``` to create an Access Credentials file with a Named Profile. Additional Named Profiles are appended to the ``~/.aws/credentials``.
 For example, the command output of `` aws configure --profile pool2`` can be as follows:```
-aws configure --profile pool2AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY Default region name [None]: Default output format [None]: json 
+aws configure --profile pool2AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLEAWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEYDefault region name [None]:Default output format [None]: json
 ```* The Access Key will be stored in ``~/.aws/credentials``.* The Secret Key will be stored in ``~/.aws/credentials``.* The Region does not need to be set. The user can press the Return key to skip this. The Region will be stored in ``~/.aws/config``.* The Output Format will be stored in ``~/.aws/config``.An example of the AWS Credentials File (``~/.aws/credentials``) is as follows:
 ```
 [default]aws_access_key_id = AKIAIOSFODNN7EXAMPLEaws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY[profile pool2]aws_access_key_id = N67W90RKLCWOLPSKN8W8aws_secret_access_key = RlfTDyqPg0WnY/PWdxMEe/gjuG7QRckynofRMwwR
 ```* The pool2 profile offers another set of Access Credentials for an S3 API connection.  An example of the AWS Configuration File (~/.aws/config) is as follows:
 ```
 [default]output=json[profile pool2]output=text```
-#### Using Default CredentialsThis section uses the command for listing Buckets as an example. You can use other AWS commands similarly. 
- To list buckets by using the default Credentials, use the following command:
+#### Using Default CredentialsThis section uses the command for listing Buckets as an example. You can use other AWS commands similarly.
+To list buckets by using the default Credentials, use the following command:
 ```$ aws s3 ls   
 ```To list buckets by using the a profile named ``pool2``, use the following command:
 ```
@@ -88,15 +88,15 @@ $ aws --profile pool2 s3 ls
 {: #configuring-storage-endpoint}
 The AWS CLI sends all requests to ``s3.amazonaws.com`` by default.
 To send requests to COS Dedicated IBM Managed, change the method to use a different hostname or IP address.Set the ``--endpoint-url`` option in the AWS CLI command with the [endpoint URL provided in the Lock Box](../../userguides/user_accounts/index.html#AccessCredentials).
-**Note:** The AWS CLI interprets the http(s) portion of this endpoint and infer encrypted or plain text from the URL.
+**Note:** The AWS CLI interprets the http(s) portion of this endpoint and infers encrypted or plain text from the URL.
 
 The COS Dedicated IBM Managed API supports both Resource Path and Virtual Host Addressing.### Using Resource Path AddressingUse the ``--endpoint-url`` option of ``aws configure``:```
  aws --endpoint-url http://<endpoint_URL> s3
-``` ## Using Other Options
+```## Using Other Options
 {: #other-options}Additional options can be used in the main AWS CLI command. More information and examples can be found in the [Using High-Level s3 Commands with the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html).
 ## Supported Command Line Options
 {: #supported-command-line}
 S3 API operations that the COS Dedicated IBM Managed API supports might not map directly to these AWS CLI commands. The supported AWS CLI command lines are as follows. The unsupported options are noted.
 
 | Command  | Description         | Supported   | Unsupported options  |
-|----------|---------------------|-------------|----------------------|| cp       | Copies a local file or Object to another location locally or in COS Dedicated IBM Managed. | Yes | --acl Bucket-owner-read option --acl Bucket-owner-full-control --website -redirect --source-region --grants full={emailAddress\|userName} || ls       | List Objects and common prefixes under a prefix or all Buckets. | Yes | --output || mb       | Creates an Bucket.  |  Yes |   || mv       | Moves a local file or Object to another location locally or in COS Dedicated IBM Managed. | Yes   | --acl Bucket-owner-read option --acl Bucket-owner-full-control --website -redirect --source-region --grants full={emailAddress\|userName} || rb       | Deletes an Bucket.  | Yes |  || sync     | Syncs directories and prefixes. Recursively copies new and updated files from the source directory to the destination. Only creates folders in the destination if they contain one or more files. | Yes | --acl Bucket-owner-read option --acl Bucket-owner-full-control --website -redirect --source-region --grants full={emailAddress\|userName} || website | Set the website configuration for a Bucket. |No| |
+|----------|---------------------|-------------|----------------------|| cp       | Copies a local file or Object to another location locally or in COS Dedicated IBM Managed. | Yes | --acl Bucket-owner-read option --acl Bucket-owner-full-control --website -redirect --source-region --grants full={emailAddress\|userName} || ls       | List Objects and common prefixes under a prefix or all Buckets. | Yes | --output || mb       | Creates a Bucket.  |  Yes |   || mv       | Moves a local file or Object to another location locally or in COS Dedicated IBM Managed. | Yes   | --acl Bucket-owner-read option --acl Bucket-owner-full-control --website -redirect --source-region --grants full={emailAddress\|userName} || rb       | Deletes a Bucket.  | Yes |  || sync     | Syncs directories and prefixes. Recursively copies new and updated files from the source directory to the destination. Only creates folders in the destination if they contain one or more files. | Yes | --acl Bucket-owner-read option --acl Bucket-owner-full-control --website -redirect --source-region --grants full={emailAddress\|userName} || website | Set the website configuration for a Bucket. |No| |

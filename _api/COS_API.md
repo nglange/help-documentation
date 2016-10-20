@@ -23,22 +23,22 @@ dateAdded: June 29th, 2016
 Prior to using this API, do the following:
 * Obtain your [Access Credentials](../../userguides/user_accounts/index.html#AccessCredentials) from the Box Panel Lock Box.* Configure Provisioning API
 	The Provisioning API Configuration allows an administrator to control the type of bucket provisioning requests available to users through the storage APIs. Provisioning user actions are disabled by default but can be set to Create Only or Create and Delete.
-	
+
 	If you want to use the provisioning API, [submit a Support ticket](../../userguides/Box_Panel/index.html#create-ticket) to ask the Support team to configure the feature for you.
 
 ## Common Headers and Error Responses
-{: #headers-and-error-response} 
+{: #headers-and-error-response}
 
 ### Common Request Headers
 The following are the common request headers used in S3 API, and supported by COS Dedicated IBM Managed. Unsupported headers will be ignored if sent in a request.| Header             | Supported  |  Note                               |
-|--------------------|------------|-------------------------------------|| Authorization      | Yes        | AWS, AWS4, or BASIC authentication. || Content-Length     | Yes        | Chunked encoding also supported.    || Content-Type       | Yes        | Stored as object metadata.          || Content-MD5        | Yes        |                                     || Cache-Control      | No         |                                     || Content-Disposition| No         |                                     || Content-Encoding   | No         |                                     || Expires            | No         |                                     || Date               | Required   |                                     || Expect             | Yes        |                                     | | Host               | Supported  |                                     ||x-amz-content-sha256| Yes        | Used with signature version 4 authenticated requests. || x-amz-date         | Yes        |                                     || User-Agent         | Ignored    |                                     ||x-amz-security-token| Ignored    | Tokens are not supported.           |   
+|--------------------|------------|-------------------------------------|| Authorization      | Yes        | AWS, AWS4, or BASIC authentication. || Content-Length     | Yes        | Chunked encoding also supported.    || Content-Type       | Yes        | Stored as object metadata.          || Content-MD5        | Yes        |                                     || Cache-Control      | No         |                                     || Content-Disposition| No         |                                     || Content-Encoding   | No         |                                     || Expires            | No         |                                     || Date               | Required   |                                     || Expect             | Yes        |                                     || Host               | Supported  |                                     ||x-amz-content-sha256| Yes        | Used with signature version 4 authenticated requests. || x-amz-date         | Yes        |                                     || User-Agent         | Ignored    |                                     ||x-amz-security-token| Ignored    | Tokens are not supported.           |   
 
 For more information about the request headers, see [S3 API Common Request Headers](http://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html).###  Common Response Headers
-The following are the common response headers used in S3 API, and supported by COS Dedicated IBM Managed. 
+The following are the common response headers used in S3 API, and supported by COS Dedicated IBM Managed.
 |  Header        | Supported | Note |
-|----------------|-----------|------|| Content-Length | Yes       |      ||Connection     | Yes       |      | 
+|----------------|-----------|------|| Content-Length | Yes       |      ||Connection     | Yes       |      |
 | Date           | Yes       |      || ETag           | Yes       | Contains MD5 checksum. |
-| Server         | Yes       |      | | x-amz-id-2     | No        |      ||x-amz-request-id| Yes       |      ||X-Clv-Request-Id|           | Unique identifier per response a COS Dedicated IBM Managed Support Engineer uses for diagnostics and troubleshooting purposes. ||x-amz-version-id| Yes       |      ||X-Clv-S3-Version|           | S3 API version the COS Dedicated IBM Managed API used for the request. |
+| Server         | Yes       |      || x-amz-id-2     | No        |      ||x-amz-request-id| Yes       |      ||X-Clv-Request-Id|           | Unique identifier per response a COS Dedicated IBM Managed Support Engineer uses for diagnostics and troubleshooting purposes. ||x-amz-version-id| Yes       |      ||X-Clv-S3-Version|           | S3 API version the COS Dedicated IBM Managed API used for the request. |
 For more information about the response headers, see [S3 API Common Response Headers](http://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonResponseHeaders.html).
 ### Error Responses
 COS Dedicated IBM Managed might return any and all error responses defined by S3 API as documented at [S3 API Error Responses](http://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html).
@@ -55,8 +55,8 @@ For more information about the request headers, see [S3 API Common Request Heade
 | Canned ACL | Applies to | Supported |
 |------------|------------|-----------|| private | Bucket and object | Yes. When set on a bucket, the requestor is interpreted as the bucket owner. || public-read | Bucket and object | Yes. When set on a bucket, the requestor is interpreted as the bucket owner. || public-read-write | Bucket and object |Yes. When set on a bucket, the requestor is interpreted as the bucket owner. || authenticated-read  | Bucket and object | Supported when set on an object only. Not supported as a bucket ACL. || bucket-owner-read | Object  | No || bucket-owner-full-control | Object | No || log-delivery-write | Bucket | No. Bucket access logging feature not supported |
 ## Operations on the Service
-{: #operations-on-service}The following table describes the service operation supported by the COS Dedicated IBM Managed API. 
-**Service operation supported by COS Dedicated IBM Managed:**| Operation | Supported ||-----------|----------------|| GET Service (List Buckets) | Yes | 
+{: #operations-on-service}The following table describes the service operation supported by the COS Dedicated IBM Managed API.
+**Service operation supported by COS Dedicated IBM Managed:**| Operation | Supported ||-----------|----------------|| GET Service (List Buckets) | Yes |
 ### GET ServiceUnless otherwise noted in the following table, all parameters, operation-specific request and response headers and the response body conform to the S3 API.
 This ``GET`` operation lists all buckets the authenticated requestor owns. Authenticating this request requires a valid Access Key ID. Lists cannot be generated by anonymous requests nor can they include buckets owned by other users.
 **GET services supported by COS Dedicated IBM Managed:**| Operation | Supported | Notes |
@@ -71,7 +71,7 @@ For more information about the request headers, see [S3 API Common Request Heade
 | GET Bucket Website | No |  || HEAD Bucket | Yes |  || List Multipart Uploads | Yes |  || PUT Bucket | Yes | Requester must have the Bucket Provisioner role assigned. Before using this operation, a Bucket Template must exist. If the ``LocationConstraint`` parameter (as documented by Amazon) is used, it must correspond to the provisioning code for the template. If omitted, the default template will be used. || PUT Bucket ACL | Yes | Requestor must be granted ``WRITE_ACL`` permission for bucket. || PUT Bucket CORS | Yes | Requestor must be granted ``FULL_CONTROL`` permission for bucket. || PUT Bucket Lifecycle | No |  || PUT Bucket Policy | No |  Use Manager API. || PUT Bucket Logging | No | Contact COS Dedicated IBM Managed Support to get audit logs. || PUT Bucket Notification | No | || PUT Bucket Tagging | Yes | || PUT Bucket Request Payment | Yes | || PUT Bucket Versioning | Yes | Requestor must be granted ``FULL_CONTROL`` permission for bucket. || PUT Bucket Website | No | |For more information, see [S3 API Operations on Buckets](http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketOps.html).
 ### GET BucketAll parameters, operation-specific request and response headers and the response body conform to the S3 API under normal operations when the name index is enabled.When Recovery Listing is enabled, the results of a ``GET`` Bucket (List Objects) operation are returned in non-lexicographical order. Pagination is supported using the normal convention by utilizing the marker parameter and ``nextMarker`` response element. A search using the prefix and delimiter parameters in recovery listing mode will result in an HTTP ``405 Method Not Allowed`` response code.
 If the name index is disabled for a bucket and recovery mode listing is not enabled, all listing operation requests also will result in an HTTP ``405 Method Not Allowed`` response code.
-COS Dedicated IBM Managed ignores any value greater than 1,000 for ``max-keys`` and returns only up to 1,000 keys.For more information, see [Common Headers](#headers-and-error-response).
+COS Dedicated IBM Managed ignores any value greater than 1000 for ``max-keys`` and returns only up to 1000 keys.For more information, see [Common Headers](#headers-and-error-response).
 ### HEAD Bucket
 There are no operation specific request headers or response headers for this operation.
 For more information, see [Common Headers](#headers-and-error-response).
@@ -84,7 +84,7 @@ For more information about the request headers, see [S3 API Common Request Heade
 | Operation | Supported | Note |
 |------|------|----|| DELETE Object | Yes | || DELETE Multiple Objects | Yes | || GET Object | Yes | || GET Object ACL | Yes | || GET Object torrent | No | || HEAD Object | Yes | || OPTIONS Object | Yes | || POST Object | Yes | || POST Object restore | No | || PUT Object | Yes | || PUT Object ACL | Yes | || PUT Object (Copy) | Yes | Copying objects results in a full-Width read and then a full-Width write. These full copies will result in high bandwidth utilization within the system until the copy is complete. || Initiate Multipart Upload | Yes | || Upload Part | Yes || Upload Part (Copy) | Yes | |
 | Complete Multipart Upload | Yes | || Abort Multipart Upload | Yes | || List Parts | Yes | |
- 
+
 For more information, see [S3 API Operations on Objects.](http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectOps.html) and [Common Headers](#headers-and-error-response).
 
 ### GET Object
@@ -98,7 +98,7 @@ For more information, see [S3 API Operations on Objects.](http://docs.aws.amazon
 ### POST Object
 Unless otherwise noted in the following tables, all parameters, operation specific request and response headers and the response body conform to the S3 API.**POST object support with COS Dedicated IBM Managed - Form Fields:**
 | Form Field | Supported ||------------|-----------|
-| AWSAccessKeyId | Yes   | | acl  | Yes || Cache-Control | Ignored || Content-Type | Ignored || Content-Disposition  | Ignored || Content-Encoding  | Ignored || Expires | Ignored || key | Yes || policy | Yes || success_action_redirect, redirect | Ignored || success_action_status | Yes || signature | Yes || x-amz-security-token | Ignored || Other field names prefixed with x-amz-meta- | Yes || file | Yes |**POST object support with COS Dedicated IBM Managed - Response Headers:**| Response Header | Supported |
+| AWSAccessKeyId | Yes   || acl  | Yes || Cache-Control | Ignored || Content-Type | Ignored || Content-Disposition  | Ignored || Content-Encoding  | Ignored || Expires | Ignored || key | Yes || policy | Yes || success_action_redirect, redirect | Ignored || success_action_status | Yes || signature | Yes || x-amz-security-token | Ignored || Other field names prefixed with x-amz-meta- | Yes || file | Yes |**POST object support with COS Dedicated IBM Managed - Response Headers:**| Response Header | Supported |
 |-----------------|-----------|| X-Amz-Expiration | No || X-Amz-Server-Side-Encryption | No |
 ### DELETE Object
 Unless otherwise noted in the following table, all parameters, operation specific request and response headers and the response body conform to the S3 API.
@@ -196,4 +196,3 @@ For more information, see [S3 API Operations on Objects.](http://docs.aws.amazon
     <td>No</td>
   </tr>
  </table>
-

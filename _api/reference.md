@@ -24,7 +24,7 @@ The IBM Cloud Object Storage implementation of the S3 API supports the most comm
 
 
 ### Common Headers and Error Responses
-{: #headers-and-error-response} 
+{: #headers-and-error-response}
 
 #### Common Request Headers
 The following table describes supported common request headers. Headers not listed here will be ignored if sent in a request.
@@ -37,7 +37,7 @@ The following table describes supported common request headers. Headers not list
 |x-amz-content-sha256| **Required** for uploading objects. |
 | Content-Length     | **Required** for uploading objects, chunked encoding also supported.    |
 | Content-MD5        | A 128-bit MD5 hash value of the message being sent.                  |
-| Expect             | `100-continue` waits for the headers to be accepted before sending the body.  | 
+| Expect             | `100-continue` waits for the headers to be accepted before sending the body.  |
 
 
 
@@ -48,9 +48,9 @@ The following table describes common response headers.
 |  Header        | Note |
 |----------------|------|
 | Content-Length | The length of the request body in bytes.      |
-|Connection     |  Indicates whether the connection is open or closed.     | 
+|Connection     |  Indicates whether the connection is open or closed.     |
 | Date           | Timestamp of the request.     |
-| Server         | Name of the responding server.     | 
+| Server         | Name of the responding server.     |
 |X-Clv-Request-Id|  Unique identifier generated per request. |
 
 ### Operations on Service
@@ -146,7 +146,7 @@ Content-Length: 0
 
 #### List objects in a given bucket
 
-When a `GET` request is given to a specific container, a list of the contents are returned.  This listing is limited to the first 1,000 objects.
+When a `GET` request is given to a specific container, a list of the contents are returned.  This listing is limited to the first 1000 objects.
 
 **Syntax**
 
@@ -293,10 +293,10 @@ Host: s3-api.us-geo.objectstorage.softlayer.net
 Connection: close
 Content-Length: 533
 
- The 'queen' bee is developed from larvae selected by worker bees and fed a 
- substance referred to as 'royal jelly' to accelerate sexual maturity. After a 
- short while the 'queen' is the mother of nearly every bee in the hive, and 
- the colony will fight fiercely to protect her. 
+ The 'queen' bee is developed from larvae selected by worker bees and fed a
+ substance referred to as 'royal jelly' to accelerate sexual maturity. After a
+ short while the 'queen' is the mother of nearly every bee in the hive, and
+ the colony will fight fiercely to protect her.
 
 {% endhighlight %}
 
@@ -385,8 +385,8 @@ Last-Modified: Thu, 25 Aug 2016 17:46:53 GMT
 Content-Length: 467
 
  Female bees that are not fortunate enough to be selected to be the 'queen'
- while they were still larvae become known as 'worker' bees. These bees lack 
- the ability to reproduce and instead ensure that the hive functions smoothly, 
+ while they were still larvae become known as 'worker' bees. These bees lack
+ the ability to reproduce and instead ensure that the hive functions smoothly,
  acting almost as a single organism in fulfilling their purpose.
 {% endhighlight %}
 
@@ -420,5 +420,3 @@ Server: Cleversafe/3.9.0.121
 X-Clv-S3-Version: 2.5
 x-amz-request-id: 8ff4dc32-a6f0-447f-86cf-427b564d5855
 {% endhighlight %}
-
-
