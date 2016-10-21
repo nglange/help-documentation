@@ -20,7 +20,7 @@ dateAdded: August 18th, 2016
 ###  Overview
 {: #overview}
 
-The IBM Cloud Object Storage implementation of the S3 API supports the most commonly used subset of Amazon S3 API operations. A complete list of supported operations can be found [here]({{ site.baseurl }}/gettingstarted/api/overview/).
+The IBM Cloud Object Storage implementation of the S3 API supports the most commonly used subset of Amazon S3 API operations. A complete list of supported operations can be found [here]({{ site.baseurl }}/gettingstarted/api/Overview/).
 
 
 ### Common Headers and Error Responses
