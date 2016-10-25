@@ -134,7 +134,7 @@ To create a Box Panel user, follow these steps:
 2. On the Account Contacts page, click the **Add Contact** button at the upper-right corner of the page.
 3. In the Add a contact window, input the contact information of the user and then click **Save Details**.   
 
-The new user will receive an email from Blue Box to guide him/her to set the account password. For more information, see [Box Panel Administrator and User](../Box_Panel/index.html)
+The new user will receive an email from **COS Dedicated IBM Managed Support** to guide him/her to set the account password. For more information, see [Box Panel Administrator and User](../Box_Panel/index.html)
 
 
 ### Creating COS User

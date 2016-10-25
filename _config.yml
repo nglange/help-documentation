@@ -35,7 +35,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       dateAdded: "June 7th, 2016"
-      author: "Blue Box Support"
+      author: "COS Dedicated IBM Managed Support"
       job-title:
 
 sass:
