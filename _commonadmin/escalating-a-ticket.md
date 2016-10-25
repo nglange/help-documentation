@@ -11,8 +11,8 @@ dateAdded: January 14th, 2016
 First, be sure you have opened a ticket with **COS Dedicated IBM Managed Support**, as described in [How do I report an issue?](../report-issue/index.html)
 
 * email: support@bluebox.net
-* chat: chat.bluebox.net
-* web: support.bluebox.net
+* chat: [chat.bluebox.net](https://chat.bluebox.net/)
+* web: [support.bluebox.net](https://support.bluebox.net/)
 * phone: 800-613-4305
 
 If you have a new or existing ticket, and you feel that your situation requires escalation, as in the case of an _outage_, you can escalate in three ways:

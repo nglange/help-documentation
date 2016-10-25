@@ -15,10 +15,13 @@ At the COS Dedicated IBM Managed Group, we strive to keep our customers informed
 _On the Web_
 
 You can always find the latest network status information by visiting:
+
 ```
 https://blueboxstatus.com/
 ```
+
 If you have any trouble loading that site, you can still go to our old page, located here:
+
 ```
 http://status.bluebox.net
 ```

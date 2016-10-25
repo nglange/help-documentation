@@ -25,8 +25,8 @@ Your **COS Dedicated IBM Managed Support** team is available 24 hours a day, sev
 **2. Open a new ticket with COS Dedicated IBM Managed Support** by using one of the following methods:
 
 * email: support@bluebox.net
-* chat: chat.bluebox.net
-* web: support.bluebox.net
+* chat: [chat.bluebox.net](https://chat.bluebox.net/)
+* web: [support.bluebox.net](https://support.bluebox.net/)
 * phone: 800-613-4305
 
 
