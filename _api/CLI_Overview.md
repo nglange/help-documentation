@@ -13,7 +13,6 @@ dateAdded: June 8th, 2016
 * [Installing the AWS CLI](#installing-cli)
 * [Configuring Authentication](#configuring-authentication)
 * [Configuring the Storage Endpoint](#configuring-storage-endpoint)
-* [Using Other Options](#other-options)
 * [Supported Command Line Options](#supported-command-line)
 
 ## Overview
@@ -26,13 +25,13 @@ dateAdded: June 8th, 2016
 
 Using the AWS CLI in COS Dedicated IBM Managed requires a slight modification: setting the S3 API endpoint. Other minor variations are outlined as follows.
 
-For detailed information on SDK classes and functions, see the [AWS CLI S3 API Reference](http://docs.aws.amazon.com/cli/latest/reference/s3/index.html).
+<!-- For detailed information on SDK classes and functions, see the [AWS CLI S3 API Reference](http://docs.aws.amazon.com/cli/latest/reference/s3/index.html). --->
 The examples in this document were generated using AWS CLI S3 1.7.36
 
 Some sections refer to home directories. The user’s home directory vary per platform:| OS        |  Location           ||-----------|---------------------|| Linux     | /home/{username} ~/ || Windows 7 | %USERPROFILE%\      || Mac OS X  | /Users/{username}   |
 This guide assumes a Unix/Linux development environment in the examples.#### Using Secure HTTP
 Take one of the following steps to use secure HTTP connections:* Configure the host to trust the Manager’s Certificate Authority (CA). Retrieve the Manager CA and follow the operating system’s instructions to install that CA.* Configure COS Dedicated IBM Managed with an external CA that the host already trusts internally or externally.* Configure the SDK to ignore self-signed certificates at connect if the language supports it. This method is not recommended as it exposes your service to risk; the code will automatically trust any certificate.## Installing the AWS CLI
-{: #installing-cli}The AWS CLI can be [downloaded from Amazon](http://aws.amazon.com/cli/). Make sure that you download a version higher than 1.7.42.
+{: #installing-cli}[Download the AWS CLI](http://aws.amazon.com/cli/). The examples in this document have been generated using version 1.10.66 of the CLI.
 For instructions on how to install the AWS CLI, see the [Amazon CLI documentation](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).
 ## Configuring Authentication
 {: #configuring-authentication}
@@ -65,7 +64,8 @@ For example, the command output of ``aws configure`` can be as follows:
 
 ```
 $ aws configureAWS Access Key ID [None]: #AKIAIOSFODNN7EXAMPLE#AWS Secret Access Key [None]: #wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY#Default region name [None]:Default output format [None]: #json#```* The Access Key will be stored in ``~/.aws/credentials``.* The Secret Key will be stored in ``~/.aws/credentials``.* The Region does not need to be set. The user can press the Return key to skip this. The Region will be stored in ``~/.aws/config``.* The Output Format will be stored in ``~/.aws/config``.
-For more information on ``aws configure``, see [Configuring the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
+
+<!-- For more information on ``aws configure``, see [Configuring the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).-->
 
 To support multiple identities, AWS Credential Files can have Named Profiles.Use ```aws configure — profile {profileName}``` to create an Access Credentials file with a Named Profile. Additional Named Profiles are appended to the ``~/.aws/credentials``.
 For example, the command output of `` aws configure --profile pool2`` can be as follows:```
@@ -92,9 +92,9 @@ $ aws --profile pool2 s3 ls
 
 The COS Dedicated IBM Managed API supports both Resource Path and Virtual Host Addressing.### Using Resource Path AddressingUse the ``--endpoint-url`` option of ``aws configure``:```
  aws --endpoint-url http://<endpoint_URL> s3
-```## Using Other Options
+```**Note:** Additional options can be used in the main AWS CLI command.<!--## Using Other Options
 {: #other-options}Additional options can be used in the main AWS CLI command. More information and examples can be found in the [Using High-Level s3 Commands with the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html).
-## Supported Command Line Options
+-->## Supported Command Line Options
 {: #supported-command-line}
 S3 API operations that the COS Dedicated IBM Managed API supports might not map directly to these AWS CLI commands. The supported AWS CLI command lines are as follows. The unsupported options are noted.
 
