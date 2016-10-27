@@ -31,8 +31,11 @@ Using the AWS CLI in COS Dedicated IBM Managed requires a slight modification: s
 Some sections refer to home directories. The user’s home directory vary per platform:| OS        |  Location           ||-----------|---------------------|| Linux     | /home/{username} ~/ || Windows 7 | %USERPROFILE%\      || Mac OS X  | /Users/{username}   |
 This guide assumes a Unix/Linux development environment in the examples.#### Using Secure HTTP
 Take one of the following steps to use secure HTTP connections:* Configure the host to trust the Manager’s Certificate Authority (CA). Retrieve the Manager CA and follow the operating system’s instructions to install that CA.* Configure COS Dedicated IBM Managed with an external CA that the host already trusts internally or externally.* Configure the SDK to ignore self-signed certificates at connect if the language supports it. This method is not recommended as it exposes your service to risk; the code will automatically trust any certificate.## Installing the AWS CLI
-{: #installing-cli}[Download the AWS CLI](http://aws.amazon.com/cli/). The examples in this document have been generated using version 1.10.66 of the CLI.
-For instructions on how to install the AWS CLI, see the [Amazon CLI documentation](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).
+{: #installing-cli}
+
+The official command line interface for AWS is compatible with the IBM COS S3 API. Written in Python, it can be installed from the Python Package Index via ``pip install awscli``. Access keys are sourced from ``~/.aws/credentials``.
+
+The examples in this document have been generated using version 1.10.66 of the CLI. To check the version installed, run ``aws --version``.
 ## Configuring Authentication
 {: #configuring-authentication}
 The COS Dedicated IBM Managed API supports AWS Signature v2 and v4 Authentication.
