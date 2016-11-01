@@ -29,5 +29,6 @@ Your **COS Dedicated IBM Managed Support** team is available 24 hours a day, sev
 * web: [support.bluebox.net](https://support.bluebox.net/)
 * phone: 800-613-4305
 
+For more information on how to create a ticket from the Box Panel webpage, see [Getting Support](../../userguides/Box_Panel/index.html#getting-support).
 
 If you feel that your situation requires escalation, as in the case of an outage, follow the steps in [How do I escalate a ticket?](../escalating-a-ticket/index.html) to escalate your ticket.

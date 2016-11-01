@@ -20,4 +20,4 @@ That will bring up the **Subscribers** popup section. You can add any additional
 
 ![Subscribers screen]({{site.baseurl}}/img/Subscribers_Screen.png)
 
-You can remove email addresses the same way, simply click the red "x" next to the email.
+You can remove email addresses by clicking the red "x" next to the email.

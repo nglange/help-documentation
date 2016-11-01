@@ -62,11 +62,15 @@ In most cases, you will want to open a support ticket to get support. By using a
 **To create a ticket:**
 {: #create-ticket}
 
-1. Open a new ticket from the **Support** page.
+1. Click **New Ticket** from the **Support** page.
 
-2. In the Modal window, your name should show up as the **Ticket Creator.**
+	![ ](../../../img/new_ticket.png)
 
-3. Copy additional users in the **CC** field to make them aware of the ticket and track its status.
+	In the Modal window, your name should show up as the **Ticket Creator.**
+
+2. Select a category, **Support** or **Billing**. A list of users is displayed according to the category that you select. Verify the users who should have access to your ticket.
+
+3. Copy additional users in the **CC additional users** field to make them aware of the ticket and track its status.
 
 4. Add a descriptive subject to the ticket.
 
@@ -91,13 +95,13 @@ In most cases, you will want to open a support ticket to get support. By using a
 
 	![ ](https://cloud.githubusercontent.com/assets/17212946/15032633/850d3d4a-1228-11e6-9b37-c20e5d32d9b9.png)
 
- 9. If you wish to open your ticket as **Urgent** and consent to pay the consulting charges for non-critical items, check the **I Agree** box.
+ 9. If you wish to open your ticket as urgent and consent to pay the consulting charges for non-critical items, check the **I Agree** box.
 
- 10. Finally, click the **Create Ticket** box.
+ 10. Finally, click the **Create Ticket** button.
 
 **Using Your Support Ticket**
 
-Anytime after a ticket is created, you can see the text associated with that ticket, by clicking on that support ticket from your Dashboard. The ticket's text might include references to other tickets, as well as chat history and any correspondence related to your selected ticket. The status of your support ticket is highlighted on the orange button in the top left corner. Status indicators include OPEN, PENDING COMPLETION, PARKED, and so forth.
+Anytime after a ticket is created, you can see the text associated with that ticket, by clicking on that support ticket from your Dashboard. The ticket's text might include references to other tickets, as well as chat history and any correspondence related to your selected ticket. The status of your support ticket is highlighted in the top right corner. Status indicators include OPEN, PENDING COMPLETION, PARKED, and so forth.
 
 
 From the panel on the left-hand side of the screen, you can select options to create another new support ticket, subscribe to the ticket you have selected (if you want to follow its status), view your tickets, and view all tickets submitted by shared users on your account.
@@ -134,7 +138,7 @@ To create a Box Panel user, follow these steps:
 2. On the Account Contacts page, click the **Add Contact** button at the upper-right corner of the page.
 3. In the Add a contact window, input the contact information of the user and then click **Save Details**.   
 
-The new user will receive an email from **COS Dedicated IBM Managed Support** to guide him/her to set the account password. For more information, see [Box Panel Administrator and User](../Box_Panel/index.html)
+The new user will receive an email from **COS Dedicated IBM Managed Support** to guide him/her to set the account password. For more information, see [Box Panel Administrator and User](../user_accounts/index.html)
 
 
 ### Creating COS User
