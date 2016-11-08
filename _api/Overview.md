@@ -13,6 +13,17 @@ IBM Cloud Object Storage Dedicated IBM Managed (COS Dedicated IBM Managed) uses 
 
 The following tables describe the complete set of supported operations when using the S3 API to access COS Dedicated IBM Managed.  For details on using the operations, including examples, see [the API reference page]({{ site.baseurl }}/gettingstarted/api/reference).
 
+## Prerequisites
+{: #prerequisite}
+Prior to using this API, do the following:
+* Obtain your [Access Credentials](../../userguides/user_accounts/index.html#AccessCredentials) from the Box Panel Lock Box.
+
+* Configure Provisioning API
+
+    The Provisioning API Configuration allows an administrator to control the type of bucket provisioning requests available to users through the storage APIs. Provisioning user actions are disabled by default but can be set to Create Only or Create and Delete.
+
+    If you want to use the provisioning API, [submit a Support ticket](../../userguides/Box_Panel/index.html#create-ticket) to ask the Support team to configure the feature for you.
+
 ### Operations on the service
 
 The only operation that is applied directly to account level is to get a list of buckets owned by that account. Accounts are limited to 100 buckets.
