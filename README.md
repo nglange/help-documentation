@@ -1,4 +1,4 @@
-# IBM Dedicated Cloud Object Storage Help
+# IBM Cloud Object Storage Help
 This repo contains help documentation for users of IBM Managed Dedicated Cloud Object Storage.
 
 Here are some **Style Conventions** for this Repository, if you are editing these documents:
